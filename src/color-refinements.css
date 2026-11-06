@@ -1,0 +1,192 @@
+/* A shared ocean palette with a subtle chromatic signature per page. */
+.site-shell {
+  --ocean-deep: #062d4d;
+  --ocean-mid: #075b94;
+  --ocean-bright: #1687bb;
+  --ocean-ice: #eef8fc;
+  --ocean-accent: #a8dcf4;
+  --ocean-line: #d5e8f2;
+}
+.site-shell[data-page="about"] {
+  --ocean-deep: #073449;
+  --ocean-mid: #086786;
+  --ocean-bright: #1895b0;
+  --ocean-ice: #edf8fa;
+  --ocean-accent: #b1e7ee;
+}
+.site-shell[data-page="products"] {
+  --ocean-deep: #092e58;
+  --ocean-mid: #145b9c;
+  --ocean-bright: #399bd0;
+  --ocean-ice: #f0f6fd;
+  --ocean-accent: #bcdffa;
+}
+.site-shell .topbar {
+  background: linear-gradient(105deg, var(--ocean-deep), var(--ocean-mid));
+  color: #e4f2fa;
+}
+.site-shell header {
+  background: linear-gradient(110deg, #fff 55%, var(--ocean-ice));
+  box-shadow: inset 0 -1px 0 var(--ocean-line);
+}
+.site-shell .brand-icon {
+  color: var(--ocean-mid);
+  border-color: #bedcea;
+  background: linear-gradient(145deg, #fff, var(--ocean-ice));
+}
+.site-shell nav > a.active {
+  color: var(--ocean-mid);
+}
+.site-shell nav > a.active:after {
+  background: linear-gradient(90deg, var(--ocean-mid), var(--ocean-bright));
+}
+.site-shell .nav-cta {
+  border-color: var(--ocean-line);
+  background: #ffffffa6;
+}
+.site-shell .nav-cta:hover {
+  background: var(--ocean-ice);
+  border-color: #9fc9df;
+}
+.site-shell .eyebrow {
+  color: var(--ocean-mid);
+}
+.site-shell h1 em,
+.site-shell h2 em {
+  color: #347fa9;
+}
+.site-shell .button:not(.light):not(.whatsapp-button) {
+  background: linear-gradient(115deg, var(--ocean-mid), #096f9f);
+  box-shadow: 0 5px 16px #06467512;
+  color: #fff;
+}
+.site-shell .button:not(.light):not(.whatsapp-button):hover {
+  background: linear-gradient(115deg, var(--ocean-deep), var(--ocean-mid));
+}
+.site-shell .button.light {
+  background: #fff;
+  color: var(--ocean-deep);
+}
+.site-shell .button.light:hover {
+  background: #e7f5fc;
+}
+.site-shell
+  :is(
+    .home-about,
+    .home-products,
+    .inner-hero,
+    .history-section,
+    .production-gallery,
+    .team-section,
+    .packaging-section,
+    .recipe-section,
+    .product-quote,
+    .about-next
+  ) {
+  background:
+    radial-gradient(ellipse at 98% 0%, #5cc9f825 0%, transparent 54%),
+    linear-gradient(120deg, var(--ocean-deep), var(--ocean-mid));
+}
+.site-shell .home-products {
+  background:
+    radial-gradient(ellipse at 0% 95%, #65c8ed22, transparent 55%),
+    linear-gradient(115deg, #06406a, #0873a5);
+}
+.site-shell
+  :is(
+    .home-about,
+    .home-products,
+    .inner-hero,
+    .history-section,
+    .production-gallery,
+    .team-section,
+    .packaging-section,
+    .recipe-section,
+    .product-quote,
+    .about-next
+  )
+  :is(em, .eyebrow) {
+  color: var(--ocean-accent);
+}
+.site-shell
+  :is(
+    .home-about,
+    .home-products,
+    .inner-hero,
+    .history-section,
+    .production-gallery,
+    .team-section,
+    .packaging-section,
+    .recipe-section,
+    .product-quote,
+    .about-next
+  )
+  :is(h1, h2, h3) {
+  color: #fff;
+}
+.site-shell :is(.home-about, .about-next) .button {
+  background: #fff !important;
+  color: var(--ocean-deep) !important;
+}
+.site-shell .home-welcome {
+  background: radial-gradient(ellipse at 50% 0%, #e9f7fc9c, transparent 70%);
+}
+.site-shell .home-production-grid article {
+  background: linear-gradient(145deg, #f6fbfe, #eaf4fb);
+  box-shadow: inset 0 -2px 0 #b8dced;
+}
+.site-shell :is(.contact-section, .catalog-inspiration) {
+  background:
+    radial-gradient(ellipse at 0% 15%, #dceffa9c, transparent 60%),
+    linear-gradient(130deg, #fbfdff, var(--ocean-ice));
+}
+.site-shell .occasion-grid article {
+  background: linear-gradient(140deg, #f8fbff, #eaf3fc);
+  box-shadow: inset 0 -2px 0 #b9d9f1;
+}
+.site-shell .catalog-demo-label {
+  color: #396a8e;
+  background: #e9f3fc;
+}
+.site-shell .filters button {
+  background: #f8fbfe;
+  border-color: var(--ocean-line);
+  color: #446b86;
+}
+.site-shell .filters button:hover {
+  background: #e9f3fc;
+}
+.site-shell .filters button.selected {
+  background: linear-gradient(120deg, var(--ocean-deep), var(--ocean-mid));
+  color: #fff;
+  border-color: var(--ocean-mid);
+}
+.site-shell .catalog-line-heading h2,
+.site-shell .product h3 {
+  color: var(--ocean-mid);
+}
+.site-shell .catalog-note {
+  background: linear-gradient(110deg, #edf5fc, #f7fbfe);
+  border-left: 2px solid #b0d5ee;
+}
+.site-shell .round {
+  background: #fafdff;
+  color: var(--ocean-mid);
+}
+.site-shell .product-index {
+  background: #073759a6;
+}
+.site-shell .editorial-photo > figcaption {
+  background: #063551bd;
+}
+.site-shell footer {
+  background: linear-gradient(125deg, #f9fcfe, #edf5fa);
+  box-shadow: inset 0 1px 0 #d9e8f1;
+}
+.site-shell .footer-bottom {
+  border-color: #d1e3ee;
+}
+.site-shell .text-button:hover,
+.site-shell .footer-links a:hover {
+  color: #086fa3;
+}
